@@ -1,0 +1,396 @@
+{"kind":"deck","id":"pr/9pjh4f","name":"Deck"}
+{"kind":"layout","layoutId":"2552924d-08b3-441a-afab-5f760726d407","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"7278618d-8335-4208-9531-9b23e5eeb3cc","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/vqn4t9","slide":1,"title":"Corporate Treasury Advisor","textShapes":8}
+{"kind":"textbox","id":"sh/2x4nap4r","slide":1,"text":"Corporate Treasury Advisor","textPreview":"Corporate Treasury Advisor","textChars":26,"textLines":1,"bbox":[42,48,560,32]}
+{"kind":"textbox","id":"sh/donyd0z6","slide":1,"text":"An agentic AI system for liquidity decisions that humans still approve","textPreview":"An agentic AI system for liquidity decisions that humans still approve","textChars":70,"textLines":1,"bbox":[42,154,940,188]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":1,"text":"Competition draft | Synthetic Nike case study | Local Streamlit proof of concept","textPreview":"Competition draft | Synthetic Nike case study | Local Streamlit proof of concept","textChars":80,"textLines":1,"bbox":[42,370,720,34]}
+{"kind":"textbox","id":"sh/val87ed8","slide":1,"text":"Agents coordinate","textPreview":"Agents coordinate","textChars":17,"textLines":1,"bbox":[42,492,360,90]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":1,"text":"Tools calculate","textPreview":"Tools calculate","textChars":15,"textLines":1,"bbox":[432,492,360,90]}
+{"kind":"textbox","id":"sh/dcbulwva","slide":1,"text":"Humans approve","textPreview":"Humans approve","textChars":14,"textLines":1,"bbox":[822,492,360,90]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":1,"text":"Synthetic / illustrative data only. Not actual Nike financial data.","textPreview":"Synthetic / illustrative data only. Not actual Nike financial data.","textChars":67,"textLines":1,"bbox":[42,672,620,22]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":1,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[1194,672,42,22]}
+{"kind":"notes","id":"nt/vqn4t9","slide":1,"text":""}
+{"kind":"slide","id":"sl/t8auiv","slide":2,"title":"Agentic AI Treasury Advisor","textShapes":18}
+{"kind":"textbox","id":"sh/p0bi9s36","slide":2,"text":"Agentic AI Treasury Advisor","textPreview":"Agentic AI Treasury Advisor","textChars":27,"textLines":1,"bbox":[42,28,380,24]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":2,"text":"Treasury decisions are high impact, but the workflow is fragmented","textPreview":"Treasury decisions are high impact, but the workflow is fragmented","textChars":66,"textLines":1,"bbox":[42,58,1080,82]}
+{"kind":"shape","id":"sh/bulwval8","slide":2,"bbox":[42,142,1196,0]}
+{"kind":"textbox","id":"sh/032lszqt","slide":2,"text":"Corporate treasurers must protect liquidity, deploy idle cash, and respond to shocks. The inputs live in different places, move at different speeds, and carry different risk.","textPreview":"Corporate treasurers must protect liquidity, deploy idle cash, and respond to shocks. The inputs live in different places, move at differ...","textChars":174,"textLines":1,"bbox":[42,156,1090,56]}
+{"kind":"shape","id":"sh/tovahoza","slide":2,"bbox":[42,252,344,270]}
+{"kind":"textbox","id":"sh/ixczed8v","slide":2,"text":"Internal finance data","textPreview":"Internal finance data","textChars":21,"textLines":1,"bbox":[70,280,288,30]}
+{"kind":"shape","id":"sh/bi9s36hc","slide":2,"bbox":[72,340,8,8]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":2,"text":"Bank balances","textPreview":"Bank balances","textChars":13,"textLines":1,"bbox":[94,332,256,48]}
+{"kind":"shape","id":"sh/tcj6tova","slide":2,"bbox":[72,386,8,8]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":2,"text":"AR/AP timing","textPreview":"AR/AP timing","textChars":12,"textLines":1,"bbox":[94,378,256,48]}
+{"kind":"shape","id":"sh/obm58z25","slide":2,"bbox":[72,432,8,8]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":2,"text":"Payroll, debt service, capex","textPreview":"Payroll, debt service, capex","textChars":28,"textLines":1,"bbox":[94,424,256,48]}
+{"kind":"shape","id":"sh/65wjudg7","slide":2,"bbox":[468,252,344,270]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":2,"text":"Market context","textPreview":"Market context","textChars":14,"textLines":1,"bbox":[496,280,288,30]}
+{"kind":"shape","id":"sh/oza1gvy9","slide":2,"bbox":[498,340,8,8]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":2,"text":"Rates and yields","textPreview":"Rates and yields","textChars":16,"textLines":1,"bbox":[520,332,256,48]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":2,"bbox":[498,386,8,8]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":2,"text":"FX movements","textPreview":"FX movements","textChars":12,"textLines":1,"bbox":[520,378,256,48]}
+{"kind":"shape","id":"sh/orytsvu9","slide":2,"bbox":[498,432,8,8]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":2,"text":"Liquidity conditions","textPreview":"Liquidity conditions","textChars":20,"textLines":1,"bbox":[520,424,256,48]}
+{"kind":"shape","id":"sh/dg7adsji","slide":2,"bbox":[894,252,344,270]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":2,"text":"Governance","textPreview":"Governance","textChars":10,"textLines":1,"bbox":[922,280,288,30]}
+{"kind":"shape","id":"sh/vahoza1g","slide":2,"bbox":[924,340,8,8]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":2,"text":"Treasury policy","textPreview":"Treasury policy","textChars":15,"textLines":1,"bbox":[946,332,256,48]}
+{"kind":"shape","id":"sh/d8v6psfi","slide":2,"bbox":[924,386,8,8]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":2,"text":"Approval authority","textPreview":"Approval authority","textChars":18,"textLines":1,"bbox":[946,378,256,48]}
+{"kind":"shape","id":"sh/z25kb6xk","slide":2,"bbox":[924,432,8,8]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":2,"text":"Audit and traceability","textPreview":"Audit and traceability","textChars":22,"textLines":1,"bbox":[946,424,256,48]}
+{"kind":"shape","id":"sh/d4vmtwra","slide":2,"bbox":[42,556,1196,70]}
+{"kind":"textbox","id":"sh/32lszqtc","slide":2,"text":"Our thesis: the winning system is not a chatbot. It is a controlled decision workflow with agents, deterministic tools, policy rules, and human approval.","textPreview":"Our thesis: the winning system is not a chatbot. It is a controlled decision workflow with agents, deterministic tools, policy rules, and...","textChars":153,"textLines":1,"bbox":[66,576,1130,34]}
+{"kind":"textbox","id":"sh/ahoza1gv","slide":2,"text":"Synthetic / illustrative data only. Not actual Nike financial data.","textPreview":"Synthetic / illustrative data only. Not actual Nike financial data.","textChars":67,"textLines":1,"bbox":[42,672,620,22]}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1194,672,42,22]}
+{"kind":"notes","id":"nt/t8auiv","slide":2,"text":""}
+{"kind":"slide","id":"sl/lfl9do","slide":3,"title":"Agentic AI Treasury Advisor","textShapes":19}
+{"kind":"textbox","id":"sh/65wjudg7","slide":3,"text":"Agentic AI Treasury Advisor","textPreview":"Agentic AI Treasury Advisor","textChars":27,"textLines":1,"bbox":[42,28,380,24]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":3,"text":"The product: a controlled agentic advisor for corporate treasury","textPreview":"The product: a controlled agentic advisor for corporate treasury","textChars":64,"textLines":1,"bbox":[42,58,1080,82]}
+{"kind":"shape","id":"sh/obm58z25","slide":3,"bbox":[42,142,1196,0]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":3,"text":"Primary user: Corporate Treasurer. Secondary users: treasury analyst, CFO, auditor.","textPreview":"Primary user: Corporate Treasurer. Secondary users: treasury analyst, CFO, auditor.","textChars":83,"textLines":1,"bbox":[42,154,840,32]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":3,"bbox":[42,238,270,238]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":3,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[64,260,52,50]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":3,"text":"Load context","textPreview":"Load context","textChars":12,"textLines":1,"bbox":[64,326,210,32]}
+{"kind":"textbox","id":"sh/z61032ls","slide":3,"text":"Synthetic internal treasury data, company goals, and policy documents","textPreview":"Synthetic internal treasury data, company goals, and policy documents","textChars":69,"textLines":1,"bbox":[64,372,220,78]}
+{"kind":"shape","id":"sh/al87ed8b","slide":3,"bbox":[348,238,270,238]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":3,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[370,260,52,50]}
+{"kind":"textbox","id":"sh/donyd0z6","slide":3,"text":"Forecast cash","textPreview":"Forecast cash","textChars":13,"textLines":1,"bbox":[370,326,210,32]}
+{"kind":"textbox","id":"sh/2x4nap4r","slide":3,"text":"30/60/90-day projections, uncertainty bands, liquidity diagnosis","textPreview":"30/60/90-day projections, uncertainty bands, liquidity diagnosis","textChars":64,"textLines":1,"bbox":[370,372,220,78]}
+{"kind":"shape","id":"sh/vixczed8","slide":3,"bbox":[654,238,270,238]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":3,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[676,260,52,50]}
+{"kind":"textbox","id":"sh/dcbulwva","slide":3,"text":"Compare actions","textPreview":"Compare actions","textChars":15,"textLines":1,"bbox":[676,326,210,32]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":3,"text":"Preserve, invest surplus, arrange financing, hedge FX, improve working capital","textPreview":"Preserve, invest surplus, arrange financing, hedge FX, improve working capital","textChars":78,"textLines":1,"bbox":[676,372,220,78]}
+{"kind":"shape","id":"sh/val87ed8","slide":3,"bbox":[960,238,270,238]}
+{"kind":"textbox","id":"sh/knih4byh","slide":3,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[982,260,52,50]}
+{"kind":"textbox","id":"sh/d8bat47y","slide":3,"text":"Enforce controls","textPreview":"Enforce controls","textChars":16,"textLines":1,"bbox":[982,326,210,32]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":3,"text":"Hard policy checks, confidence gate, human approval, audit log","textPreview":"Hard policy checks, confidence gate, human approval, audit log","textChars":62,"textLines":1,"bbox":[982,372,220,78]}
+{"kind":"shape","id":"sh/oj2t83it","slide":3,"bbox":[312,357,36,0]}
+{"kind":"shape","id":"sh/vy90je9c","slide":3,"bbox":[618,357,36,0]}
+{"kind":"shape","id":"sh/6dcbulwv","slide":3,"bbox":[924,357,36,0]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":3,"text":"Autonomous: retrieve, validate, forecast, diagnose, simulate, draft recommendation.","textPreview":"Autonomous: retrieve, validate, forecast, diagnose, simulate, draft recommendation.","textChars":83,"textLines":1,"bbox":[96,544,520,30]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":3,"text":"Not autonomous: investment, borrowing, transfers, FX trades, debt changes, payment delays.","textPreview":"Not autonomous: investment, borrowing, transfers, FX trades, debt changes, payment delays.","textChars":90,"textLines":1,"bbox":[662,544,520,30]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":3,"text":"Synthetic / illustrative data only. Not actual Nike financial data.","textPreview":"Synthetic / illustrative data only. Not actual Nike financial data.","textChars":67,"textLines":1,"bbox":[42,672,620,22]}
+{"kind":"textbox","id":"sh/61032lsz","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1194,672,42,22]}
+{"kind":"notes","id":"nt/lfl9do","slide":3,"text":""}
+{"kind":"slide","id":"sl/qp8tzr","slide":4,"title":"Agentic AI Treasury Advisor","textShapes":16}
+{"kind":"textbox","id":"sh/54zidony","slide":4,"text":"Agentic AI Treasury Advisor","textPreview":"Agentic AI Treasury Advisor","textChars":27,"textLines":1,"bbox":[42,28,380,24]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":4,"text":"System mechanics: LLM reasoning plus deterministic treasury controls","textPreview":"System mechanics: LLM reasoning plus deterministic treasury controls","textChars":68,"textLines":1,"bbox":[42,58,1080,82]}
+{"kind":"shape","id":"sh/nyd0z610","slide":4,"bbox":[42,142,1196,0]}
+{"kind":"textbox","id":"sh/cvixczed","slide":4,"text":"Treasurer / CFO\nStreamlit UI","textPreview":"Treasurer / CFO | Streamlit UI","textChars":28,"textLines":2,"bbox":[52,165,210,74]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":4,"text":"Scope gate\nRBAC placeholder","textPreview":"Scope gate | RBAC placeholder","textChars":27,"textLines":2,"bbox":[318,165,190,74]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":4,"text":"Supervisor\norchestrator","textPreview":"Supervisor | orchestrator","textChars":23,"textLines":2,"bbox":[572,152,240,100]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":4,"text":"Data quality\ncontext","textPreview":"Data quality | context","textChars":20,"textLines":2,"bbox":[118,326,178,76]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":4,"text":"Forecast\nmodule","textPreview":"Forecast | module","textChars":15,"textLines":2,"bbox":[328,326,178,76]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":4,"text":"Liquidity\nanalysis","textPreview":"Liquidity | analysis","textChars":18,"textLines":2,"bbox":[538,326,178,76]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":4,"text":"Market\nadapter","textPreview":"Market | adapter","textChars":14,"textLines":2,"bbox":[748,326,178,76]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":4,"text":"RAG policy\nretrieval","textPreview":"RAG policy | retrieval","textChars":20,"textLines":2,"bbox":[958,326,178,76]}
+{"kind":"textbox","id":"sh/7u54zido","slide":4,"text":"Decision engine\noption comparison","textPreview":"Decision engine | option comparison","textChars":33,"textLines":2,"bbox":[250,504,230,76]}
+{"kind":"textbox","id":"sh/ed8bat47","slide":4,"text":"Policy rules +\nconfidence gate","textPreview":"Policy rules + | confidence gate","textChars":30,"textLines":2,"bbox":[526,504,230,76]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":4,"text":"Human approval\nand audit log","textPreview":"Human approval | and audit log","textChars":28,"textLines":2,"bbox":[802,504,230,76]}
+{"kind":"shape","id":"sh/wra5gbq1","slide":4,"bbox":[262,202,56,0]}
+{"kind":"shape","id":"sh/36hcrmhk","slide":4,"bbox":[508,202,64,0]}
+{"kind":"shape","id":"sh/eloj2t83","slide":4,"bbox":[207,252,485,74]}
+{"kind":"shape","id":"sh/pg3ex0nu","slide":4,"bbox":[417,252,275,74]}
+{"kind":"shape","id":"sh/wval87ed","slide":4,"bbox":[627,252,65,74]}
+{"kind":"shape","id":"sh/w3m94fu1","slide":4,"bbox":[692,252,145,74]}
+{"kind":"shape","id":"sh/loj2t83i","slide":4,"bbox":[692,252,355,74]}
+{"kind":"shape","id":"sh/ex0nuxc3","slide":4,"bbox":[365,402,262,102]}
+{"kind":"shape","id":"sh/3itgfmlk","slide":4,"bbox":[365,402,472,102]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":4,"bbox":[641,402,406,102]}
+{"kind":"shape","id":"sh/lwval87e","slide":4,"bbox":[480,542,46,0]}
+{"kind":"shape","id":"sh/e9cvixcz","slide":4,"bbox":[756,542,46,0]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":4,"text":"Key architecture boundary: the LLM coordinates and explains; pandas/statistical modules calculate; policy-as-code blocks non-compliant action.","textPreview":"Key architecture boundary: the LLM coordinates and explains; pandas/statistical modules calculate; policy-as-code blocks non-compliant ac...","textChars":142,"textLines":1,"bbox":[72,620,1080,28]}
+{"kind":"textbox","id":"sh/sneloj2t","slide":4,"text":"Synthetic / illustrative data only. Not actual Nike financial data.","textPreview":"Synthetic / illustrative data only. Not actual Nike financial data.","textChars":67,"textLines":1,"bbox":[42,672,620,22]}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1194,672,42,22]}
+{"kind":"notes","id":"nt/qp8tzr","slide":4,"text":""}
+{"kind":"slide","id":"sl/e2eczz","slide":5,"title":"Agentic AI Treasury Advisor","textShapes":20}
+{"kind":"textbox","id":"sh/fil0rqd4","slide":5,"text":"Agentic AI Treasury Advisor","textPreview":"Agentic AI Treasury Advisor","textChars":27,"textLines":1,"bbox":[42,28,380,24]}
+{"kind":"textbox","id":"sh/83itgfml","slide":5,"text":"Demo scenario: healthy surplus becomes a bounded investment recommendation","textPreview":"Demo scenario: healthy surplus becomes a bounded investment recommendation","textChars":74,"textLines":1,"bbox":[42,58,1080,82]}
+{"kind":"shape","id":"sh/xobm58z2","slide":5,"bbox":[42,142,1196,0]}
+{"kind":"shape","id":"sh/m94fu18j","slide":5,"bbox":[42,164,260,134]}
+{"kind":"textbox","id":"sh/fu18jqh0","slide":5,"text":"$842.6M","textPreview":"$842.6M","textChars":7,"textLines":1,"bbox":[60,184,224,48]}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":5,"text":"Current cash","textPreview":"Current cash","textChars":12,"textLines":1,"bbox":[60,238,224,28]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":5,"text":"Synthetic starting point","textPreview":"Synthetic starting point","textChars":24,"textLines":1,"bbox":[60,266,224,22]}
+{"kind":"shape","id":"sh/mlkjm1cf","slide":5,"bbox":[326,164,260,134]}
+{"kind":"textbox","id":"sh/f6dcbulw","slide":5,"text":"$188.7M","textPreview":"$188.7M","textChars":7,"textLines":1,"bbox":[344,184,224,48]}
+{"kind":"textbox","id":"sh/vixczed8","slide":5,"text":"Genuine surplus","textPreview":"Genuine surplus","textChars":15,"textLines":1,"bbox":[344,238,224,28]}
+{"kind":"textbox","id":"sh/2x4nap4r","slide":5,"text":"After reserves and commitments","textPreview":"After reserves and commitments","textChars":30,"textLines":1,"bbox":[344,266,224,22]}
+{"kind":"shape","id":"sh/donyd0z6","slide":5,"bbox":[610,164,260,134]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":5,"text":"$84.9M","textPreview":"$84.9M","textChars":6,"textLines":1,"bbox":[628,184,224,48]}
+{"kind":"textbox","id":"sh/val87ed8","slide":5,"text":"Recommended action","textPreview":"Recommended action","textChars":18,"textLines":1,"bbox":[628,238,224,28]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":5,"text":"60-day Treasury bills","textPreview":"60-day Treasury bills","textChars":21,"textLines":1,"bbox":[628,266,224,22]}
+{"kind":"shape","id":"sh/dcbulwva","slide":5,"bbox":[894,164,260,134]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":5,"text":"95.5","textPreview":"95.5","textChars":4,"textLines":1,"bbox":[912,184,224,48]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":5,"text":"Confidence","textPreview":"Confidence","textChars":10,"textLines":1,"bbox":[912,238,224,28]}
+{"kind":"textbox","id":"sh/2lszqtcj","slide":5,"text":"RECOMMEND","textPreview":"RECOMMEND","textChars":9,"textLines":1,"bbox":[912,266,224,22]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":5,"text":"Why this is safe to show","textPreview":"Why this is safe to show","textChars":24,"textLines":1,"bbox":[690,342,420,30]}
+{"kind":"shape","id":"sh/svu9knih","slide":5,"bbox":[694,402,8,8]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":5,"text":"Payroll, debt service, capex, reserve, and buffer are protected first","textPreview":"Payroll, debt service, capex, reserve, and buffer are protected first","textChars":69,"textLines":1,"bbox":[716,394,478,48]}
+{"kind":"shape","id":"sh/a1gvy90j","slide":5,"bbox":[694,454,8,8]}
+{"kind":"textbox","id":"sh/zidonyd0","slide":5,"text":"Instrument is on the allowed list and maturity is within 90 days","textPreview":"Instrument is on the allowed list and maturity is within 90 days","textChars":64,"textLines":1,"bbox":[716,446,478,48]}
+{"kind":"shape","id":"sh/s36hcrmh","slide":5,"bbox":[694,506,8,8]}
+{"kind":"textbox","id":"sh/hoza1gvy","slide":5,"text":"Human approval is required before any investment execution","textPreview":"Human approval is required before any investment execution","textChars":58,"textLines":1,"bbox":[716,498,478,48]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":5,"text":"Synthetic / illustrative data only. Not actual Nike financial data.","textPreview":"Synthetic / illustrative data only. Not actual Nike financial data.","textChars":67,"textLines":1,"bbox":[42,672,620,22]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1194,672,42,22]}
+{"kind":"chart","id":"ch/29gr2p8n","slide":5,"name":"","chartType":"line","bbox":[42,340,580,250]}
+{"kind":"notes","id":"nt/e2eczz","slide":5,"text":""}
+{"kind":"slide","id":"sl/0oiz1z","slide":6,"title":"Agentic AI Treasury Advisor","textShapes":35}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":6,"text":"Agentic AI Treasury Advisor","textPreview":"Agentic AI Treasury Advisor","textChars":27,"textLines":1,"bbox":[42,28,380,24]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":6,"text":"The POC already proves four judge-visible behaviors","textPreview":"The POC already proves four judge-visible behaviors","textChars":51,"textLines":1,"bbox":[42,58,1080,82]}
+{"kind":"shape","id":"sh/z61032ls","slide":6,"bbox":[42,142,1196,0]}
+{"kind":"shape","id":"sh/sfil0rqd","slide":6,"bbox":[42,166,224,42]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":6,"text":"Scenario","textPreview":"Scenario","textChars":8,"textLines":1,"bbox":[52,178,204,18]}
+{"kind":"shape","id":"sh/a9w3m94f","slide":6,"bbox":[290,166,132,42]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":6,"text":"90d cash","textPreview":"90d cash","textChars":8,"textLines":1,"bbox":[300,178,112,18]}
+{"kind":"shape","id":"sh/obm58z25","slide":6,"bbox":[450,166,132,42]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":6,"text":"Surplus","textPreview":"Surplus","textChars":7,"textLines":1,"bbox":[460,178,112,18]}
+{"kind":"shape","id":"sh/t83itgfm","slide":6,"bbox":[610,166,132,42]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":6,"text":"Shortfall","textPreview":"Shortfall","textChars":9,"textLines":1,"bbox":[620,178,112,18]}
+{"kind":"shape","id":"sh/b2hwfyxo","slide":6,"bbox":[770,166,230,42]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":6,"text":"Draft action","textPreview":"Draft action","textChars":12,"textLines":1,"bbox":[780,178,210,18]}
+{"kind":"shape","id":"sh/twra5gbq","slide":6,"bbox":[1030,166,168,42]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":6,"text":"Gate","textPreview":"Gate","textChars":4,"textLines":1,"bbox":[1040,178,148,18]}
+{"kind":"shape","id":"sh/bq1oryts","slide":6,"bbox":[42,208,224,70]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":6,"text":"Healthy surplus","textPreview":"Healthy surplus","textChars":15,"textLines":1,"bbox":[52,228,204,24]}
+{"kind":"shape","id":"sh/tsvu9kni","slide":6,"bbox":[290,208,132,70]}
+{"kind":"textbox","id":"sh/47y1kre1","slide":6,"text":"$628.4M","textPreview":"$628.4M","textChars":7,"textLines":1,"bbox":[300,228,112,24]}
+{"kind":"shape","id":"sh/g3ex0nux","slide":6,"bbox":[450,208,132,70]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":6,"text":"$188.7M","textPreview":"$188.7M","textChars":7,"textLines":1,"bbox":[460,228,112,24]}
+{"kind":"shape","id":"sh/yxobm58z","slide":6,"bbox":[610,208,132,70]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":6,"text":"$0.0M","textPreview":"$0.0M","textChars":5,"textLines":1,"bbox":[620,228,112,24]}
+{"kind":"shape","id":"sh/gr2p8nqx","slide":6,"bbox":[770,208,230,70]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":6,"text":"Invest $84.9M","textPreview":"Invest $84.9M","textChars":13,"textLines":1,"bbox":[780,228,210,24]}
+{"kind":"shape","id":"sh/ylc7u54z","slide":6,"bbox":[1030,208,168,70]}
+{"kind":"textbox","id":"sh/r65wjudg","slide":6,"text":"RECOMMEND","textPreview":"RECOMMEND","textChars":9,"textLines":1,"bbox":[1040,228,148,24]}
+{"kind":"shape","id":"sh/gfmlkjm1","slide":6,"bbox":[42,278,224,70]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":6,"text":"Liquidity risk","textPreview":"Liquidity risk","textChars":14,"textLines":1,"bbox":[52,298,204,24]}
+{"kind":"shape","id":"sh/zupwb2hw","slide":6,"bbox":[290,278,132,70]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":6,"text":"-$291.0M","textPreview":"-$291.0M","textChars":8,"textLines":1,"bbox":[300,298,112,24]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":6,"bbox":[450,278,132,70]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":6,"text":"$0.0M","textPreview":"$0.0M","textChars":5,"textLines":1,"bbox":[460,298,112,24]}
+{"kind":"shape","id":"sh/z61032ls","slide":6,"bbox":[610,278,132,70]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":6,"text":"$591.0M","textPreview":"$591.0M","textChars":7,"textLines":1,"bbox":[620,298,112,24]}
+{"kind":"shape","id":"sh/hcrmhk3q","slide":6,"bbox":[770,278,230,70]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":6,"text":"Arrange $641.0M financing","textPreview":"Arrange $641.0M financing","textChars":25,"textLines":1,"bbox":[780,298,210,24]}
+{"kind":"shape","id":"sh/zed8v6ps","slide":6,"bbox":[1030,278,168,70]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":6,"text":"RECOMMEND","textPreview":"RECOMMEND","textChars":9,"textLines":1,"bbox":[1040,298,148,24]}
+{"kind":"shape","id":"sh/29gr2p8n","slide":6,"bbox":[42,348,224,70]}
+{"kind":"textbox","id":"sh/vu9knih4","slide":6,"text":"Guardrail failure","textPreview":"Guardrail failure","textChars":17,"textLines":1,"bbox":[52,368,204,24]}
+{"kind":"shape","id":"sh/kf6dcbul","slide":6,"bbox":[290,348,132,70]}
+{"kind":"textbox","id":"sh/d0z61032","slide":6,"text":"$919.2M","textPreview":"$919.2M","textChars":7,"textLines":1,"bbox":[300,368,112,24]}
+{"kind":"shape","id":"sh/2lszqtcj","slide":6,"bbox":[450,348,132,70]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":6,"text":"$315.9M","textPreview":"$315.9M","textChars":7,"textLines":1,"bbox":[460,368,112,24]}
+{"kind":"shape","id":"sh/knih4byh","slide":6,"bbox":[610,348,132,70]}
+{"kind":"textbox","id":"sh/d8bat47y","slide":6,"text":"$0.0M","textPreview":"$0.0M","textChars":5,"textLines":1,"bbox":[620,368,112,24]}
+{"kind":"shape","id":"sh/6psfil0r","slide":6,"bbox":[770,348,230,70]}
+{"kind":"textbox","id":"sh/val87ed8","slide":6,"text":"Withhold, request data","textPreview":"Withhold, request data","textChars":22,"textLines":1,"bbox":[780,368,210,24]}
+{"kind":"shape","id":"sh/hgn29gr2","slide":6,"bbox":[1030,348,168,70]}
+{"kind":"textbox","id":"sh/svu9knih","slide":6,"text":"REQUEST DATA","textPreview":"REQUEST DATA","textChars":12,"textLines":1,"bbox":[1040,368,148,24]}
+{"kind":"shape","id":"sh/za1gvy90","slide":6,"bbox":[42,418,224,70]}
+{"kind":"textbox","id":"sh/ap4r65wj","slide":6,"text":"Stress shock","textPreview":"Stress shock","textChars":12,"textLines":1,"bbox":[52,438,204,24]}
+{"kind":"shape","id":"sh/hoza1gvy","slide":6,"bbox":[290,418,132,70]}
+{"kind":"textbox","id":"sh/s36hcrmh","slide":6,"text":"$87.7M","textPreview":"$87.7M","textChars":6,"textLines":1,"bbox":[300,438,112,24]}
+{"kind":"shape","id":"sh/zidonyd0","slide":6,"bbox":[450,418,132,70]}
+{"kind":"textbox","id":"sh/a1gvy90j","slide":6,"text":"$0.0M","textPreview":"$0.0M","textChars":5,"textLines":1,"bbox":[460,438,112,24]}
+{"kind":"shape","id":"sh/lszqtcj6","slide":6,"bbox":[610,418,132,70]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":6,"text":"$214.2M","textPreview":"$214.2M","textChars":7,"textLines":1,"bbox":[620,438,112,24]}
+{"kind":"shape","id":"sh/8z25kb6x","slide":6,"bbox":[770,418,230,70]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":6,"text":"Arrange $264.2M financing","textPreview":"Arrange $264.2M financing","textChars":25,"textLines":1,"bbox":[780,438,210,24]}
+{"kind":"shape","id":"sh/qtcj6tov","slide":6,"bbox":[1030,418,168,70]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":6,"text":"RECOMMEND","textPreview":"RECOMMEND","textChars":9,"textLines":1,"bbox":[1040,438,148,24]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":6,"text":"Each scenario uses deterministic synthetic data with fixed seeds and records the recommendation, gate status, policy checks, and human decision path.","textPreview":"Each scenario uses deterministic synthetic data with fixed seeds and records the recommendation, gate status, policy checks, and human de...","textChars":149,"textLines":1,"bbox":[42,544,1040,44]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":6,"text":"Synthetic / illustrative data only. Not actual Nike financial data.","textPreview":"Synthetic / illustrative data only. Not actual Nike financial data.","textChars":67,"textLines":1,"bbox":[42,672,620,22]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1194,672,42,22]}
+{"kind":"notes","id":"nt/0oiz1z","slide":6,"text":""}
+{"kind":"slide","id":"sl/kx7f02","slide":7,"title":"Agentic AI Treasury Advisor","textShapes":25}
+{"kind":"textbox","id":"sh/mp0bi9s3","slide":7,"text":"Agentic AI Treasury Advisor","textPreview":"Agentic AI Treasury Advisor","textChars":27,"textLines":1,"bbox":[42,28,380,24]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":7,"text":"Request-time data flow: every handoff is structured and validated","textPreview":"Request-time data flow: every handoff is structured and validated","textChars":65,"textLines":1,"bbox":[42,58,1080,82]}
+{"kind":"shape","id":"sh/4vmtwra5","slide":7,"bbox":[42,142,1196,0]}
+{"kind":"shape","id":"sh/bm58z25k","slide":7,"bbox":[58,220,168,178]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":7,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[76,242,50,42]}
+{"kind":"textbox","id":"sh/tsvu9kni","slide":7,"text":"Ask","textPreview":"Ask","textChars":3,"textLines":1,"bbox":[76,304,132,26]}
+{"kind":"textbox","id":"sh/47y1kre1","slide":7,"text":"Assess liquidity and surplus","textPreview":"Assess liquidity and surplus","textChars":28,"textLines":1,"bbox":[76,346,130,42]}
+{"kind":"shape","id":"sh/bq1oryts","slide":7,"bbox":[252,220,168,178]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":7,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[270,242,50,42]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":7,"text":"Gate","textPreview":"Gate","textChars":4,"textLines":1,"bbox":[270,304,132,26]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":7,"text":"Corporate treasury only","textPreview":"Corporate treasury only","textChars":23,"textLines":1,"bbox":[270,346,130,42]}
+{"kind":"shape","id":"sh/61032lsz","slide":7,"bbox":[446,220,168,178]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":7,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[464,242,50,42]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":7,"text":"Run tools","textPreview":"Run tools","textChars":9,"textLines":1,"bbox":[464,304,132,26]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":7,"text":"Quality, forecast, liquidity, stress","textPreview":"Quality, forecast, liquidity, stress","textChars":36,"textLines":1,"bbox":[464,346,130,42]}
+{"kind":"shape","id":"sh/6dcbulwv","slide":7,"bbox":[640,220,168,178]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":7,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[658,242,50,42]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":7,"text":"Retrieve","textPreview":"Retrieve","textChars":8,"textLines":1,"bbox":[658,304,132,26]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":7,"text":"Policy and strategy context","textPreview":"Policy and strategy context","textChars":27,"textLines":1,"bbox":[658,346,130,42]}
+{"kind":"shape","id":"sh/1cfa9w3m","slide":7,"bbox":[834,220,168,178]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":7,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[852,242,50,42]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":7,"text":"Enforce","textPreview":"Enforce","textChars":7,"textLines":1,"bbox":[852,304,132,26]}
+{"kind":"textbox","id":"sh/ulwval87","slide":7,"text":"Hard limits and confidence gate","textPreview":"Hard limits and confidence gate","textChars":31,"textLines":1,"bbox":[852,346,130,42]}
+{"kind":"shape","id":"sh/1kre1w7m","slide":7,"bbox":[1028,220,168,178]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":7,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1046,242,50,42]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":7,"text":"Approve","textPreview":"Approve","textChars":7,"textLines":1,"bbox":[1046,304,132,26]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":7,"text":"Modify, reject, or audit","textPreview":"Modify, reject, or audit","textChars":24,"textLines":1,"bbox":[1046,346,130,42]}
+{"kind":"shape","id":"sh/1w7mp0bi","slide":7,"bbox":[226,309,26,0]}
+{"kind":"shape","id":"sh/8bat47y1","slide":7,"bbox":[420,309,26,0]}
+{"kind":"shape","id":"sh/m58z25kb","slide":7,"bbox":[614,309,26,0]}
+{"kind":"shape","id":"sh/bq1oryts","slide":7,"bbox":[808,309,26,0]}
+{"kind":"shape","id":"sh/4byhgn29","slide":7,"bbox":[1002,309,26,0]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":7,"text":"Structured result: metrics, assumptions, evidence, timestamps","textPreview":"Structured result: metrics, assumptions, evidence, timestamps","textChars":61,"textLines":1,"bbox":[110,476,320,72]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":7,"text":"Failure routes: request data, warn, withhold, or block","textPreview":"Failure routes: request data, warn, withhold, or block","textChars":54,"textLines":1,"bbox":[480,476,320,72]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":7,"text":"Audit record: inputs, tools, rules, recommendation, decision","textPreview":"Audit record: inputs, tools, rules, recommendation, decision","textChars":60,"textLines":1,"bbox":[850,476,320,72]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":7,"text":"Synthetic / illustrative data only. Not actual Nike financial data.","textPreview":"Synthetic / illustrative data only. Not actual Nike financial data.","textChars":67,"textLines":1,"bbox":[42,672,620,22]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1194,672,42,22]}
+{"kind":"notes","id":"nt/kx7f02","slide":7,"text":""}
+{"kind":"slide","id":"sl/r000ir","slide":8,"title":"Agentic AI Treasury Advisor","textShapes":22}
+{"kind":"textbox","id":"sh/p4r65wju","slide":8,"text":"Agentic AI Treasury Advisor","textPreview":"Agentic AI Treasury Advisor","textChars":27,"textLines":1,"bbox":[42,28,380,24]}
+{"kind":"textbox","id":"sh/ed8v6psf","slide":8,"text":"Guardrails are enforced in code, not left to model judgment","textPreview":"Guardrails are enforced in code, not left to model judgment","textChars":59,"textLines":1,"bbox":[42,58,1080,82]}
+{"kind":"shape","id":"sh/7y1kre1w","slide":8,"bbox":[42,142,1196,0]}
+{"kind":"textbox","id":"sh/0bi9s36h","slide":8,"text":"The confidence gate can show, warn, request more data, withhold, or block. Hard policy failures override narrative confidence.","textPreview":"The confidence gate can show, warn, request more data, withhold, or block. Hard policy failures override narrative confidence.","textChars":126,"textLines":1,"bbox":[42,150,960,48]}
+{"kind":"shape","id":"sh/pwb2hwfy","slide":8,"bbox":[42,248,270,272]}
+{"kind":"textbox","id":"sh/i5sneloj","slide":8,"text":"Input controls","textPreview":"Input controls","textChars":14,"textLines":1,"bbox":[64,274,220,30]}
+{"kind":"shape","id":"sh/7qpg3ex0","slide":8,"bbox":[66,336,8,8]}
+{"kind":"textbox","id":"sh/0z61032l","slide":8,"text":"Treasury scope only","textPreview":"Treasury scope only","textChars":19,"textLines":1,"bbox":[88,328,198,48]}
+{"kind":"shape","id":"sh/pkzupwb2","slide":8,"bbox":[66,384,8,8]}
+{"kind":"textbox","id":"sh/5sneloj2","slide":8,"text":"Role/access placeholder","textPreview":"Role/access placeholder","textChars":23,"textLines":1,"bbox":[88,376,198,48]}
+{"kind":"shape","id":"sh/cbulwval","slide":8,"bbox":[66,432,8,8]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":8,"text":"Freshness and completeness checks","textPreview":"Freshness and completeness checks","textChars":33,"textLines":1,"bbox":[88,424,198,48]}
+{"kind":"shape","id":"sh/u54zidon","slide":8,"bbox":[348,248,270,272]}
+{"kind":"textbox","id":"sh/5kb6xkf6","slide":8,"text":"Financial policy","textPreview":"Financial policy","textChars":16,"textLines":1,"bbox":[370,274,220,30]}
+{"kind":"shape","id":"sh/czed8v6p","slide":8,"bbox":[372,336,8,8]}
+{"kind":"textbox","id":"sh/neloj2t8","slide":8,"text":"Minimum reserve protected","textPreview":"Minimum reserve protected","textChars":25,"textLines":1,"bbox":[394,328,198,48]}
+{"kind":"shape","id":"sh/ytsvu9kn","slide":8,"bbox":[372,384,8,8]}
+{"kind":"textbox","id":"sh/58z25kb6","slide":8,"text":"Payroll and capex protected","textPreview":"Payroll and capex protected","textChars":27,"textLines":1,"bbox":[394,376,198,48]}
+{"kind":"shape","id":"sh/gn29gr2p","slide":8,"bbox":[372,432,8,8]}
+{"kind":"textbox","id":"sh/cvixczed","slide":8,"text":"Allowed instruments and maturity caps","textPreview":"Allowed instruments and maturity caps","textChars":37,"textLines":1,"bbox":[394,424,198,48]}
+{"kind":"shape","id":"sh/5gbq1ory","slide":8,"bbox":[654,248,270,272]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":8,"text":"Model risk","textPreview":"Model risk","textChars":10,"textLines":1,"bbox":[676,274,220,30]}
+{"kind":"shape","id":"sh/nap4r65w","slide":8,"bbox":[678,336,8,8]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":8,"text":"No invented numbers","textPreview":"No invented numbers","textChars":19,"textLines":1,"bbox":[700,328,198,48]}
+{"kind":"shape","id":"sh/54zidony","slide":8,"bbox":[678,384,8,8]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":8,"text":"Traceable evidence","textPreview":"Traceable evidence","textChars":18,"textLines":1,"bbox":[700,376,198,48]}
+{"kind":"shape","id":"sh/nyd0z610","slide":8,"bbox":[678,432,8,8]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":8,"text":"Confidence thresholding","textPreview":"Confidence thresholding","textChars":23,"textLines":1,"bbox":[700,424,198,48]}
+{"kind":"shape","id":"sh/1032lszq","slide":8,"bbox":[960,248,270,272]}
+{"kind":"textbox","id":"sh/r2p8nqxs","slide":8,"text":"Execution boundary","textPreview":"Execution boundary","textChars":18,"textLines":1,"bbox":[982,274,220,30]}
+{"kind":"shape","id":"sh/2hwfyxob","slide":8,"bbox":[984,336,8,8]}
+{"kind":"textbox","id":"sh/94fu18jq","slide":8,"text":"Approval for high-impact actions","textPreview":"Approval for high-impact actions","textChars":32,"textLines":1,"bbox":[1006,328,198,48]}
+{"kind":"shape","id":"sh/kjm1cfa9","slide":8,"bbox":[984,384,8,8]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":8,"text":"No autonomous money movement","textPreview":"No autonomous money movement","textChars":28,"textLines":1,"bbox":[1006,376,198,48]}
+{"kind":"shape","id":"sh/2p8nqxs7","slide":8,"bbox":[984,432,8,8]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":8,"text":"Full audit trail","textPreview":"Full audit trail","textChars":16,"textLines":1,"bbox":[1006,424,198,48]}
+{"kind":"shape","id":"sh/gvy90je9","slide":8,"bbox":[42,570,1196,46]}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":8,"text":"Human approval is mandatory for investment, borrowing, transfers, FX trades, debt changes, or payment delays.","textPreview":"Human approval is mandatory for investment, borrowing, transfers, FX trades, debt changes, or payment delays.","textChars":109,"textLines":1,"bbox":[66,582,1110,22]}
+{"kind":"textbox","id":"sh/2t83itgf","slide":8,"text":"Synthetic / illustrative data only. Not actual Nike financial data.","textPreview":"Synthetic / illustrative data only. Not actual Nike financial data.","textChars":67,"textLines":1,"bbox":[42,672,620,22]}
+{"kind":"textbox","id":"sh/ih4byhgn","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1194,672,42,22]}
+{"kind":"notes","id":"nt/r000ir","slide":8,"text":""}
+{"kind":"slide","id":"sl/2kw02x","slide":9,"title":"Agentic AI Treasury Advisor","textShapes":17}
+{"kind":"textbox","id":"sh/szqtcj6t","slide":9,"text":"Agentic AI Treasury Advisor","textPreview":"Agentic AI Treasury Advisor","textChars":27,"textLines":1,"bbox":[42,28,380,24]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":9,"text":"Positioning: bridge the gap between TMS, market terminals, and advisory workflow","textPreview":"Positioning: bridge the gap between TMS, market terminals, and advisory workflow","textChars":80,"textLines":1,"bbox":[42,58,1080,82]}
+{"kind":"shape","id":"sh/at47y1kr","slide":9,"bbox":[42,142,1196,0]}
+{"kind":"shape","id":"sh/l87ed8ba","slide":9,"bbox":[42,164,306,44]}
+{"kind":"textbox","id":"sh/sneloj2t","slide":9,"text":"Existing category","textPreview":"Existing category","textChars":17,"textLines":1,"bbox":[54,177,282,18]}
+{"kind":"shape","id":"sh/32lszqtc","slide":9,"bbox":[390,164,312,44]}
+{"kind":"textbox","id":"sh/ahoza1gv","slide":9,"text":"What it does well","textPreview":"What it does well","textChars":17,"textLines":1,"bbox":[402,177,288,18]}
+{"kind":"shape","id":"sh/lwval87e","slide":9,"bbox":[744,164,494,44]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":9,"text":"Gap our agent targets","textPreview":"Gap our agent targets","textChars":21,"textLines":1,"bbox":[756,177,470,18]}
+{"kind":"shape","id":"sh/2lszqtcj","slide":9,"bbox":[42,208,306,96]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":9,"text":"Treasury management systems","textPreview":"Treasury management systems","textChars":27,"textLines":1,"bbox":[56,226,278,56]}
+{"kind":"shape","id":"sh/knih4byh","slide":9,"bbox":[390,208,312,96]}
+{"kind":"textbox","id":"sh/d8bat47y","slide":9,"text":"Cash visibility, payments, cash forecasting, risk management","textPreview":"Cash visibility, payments, cash forecasting, risk management","textChars":60,"textLines":1,"bbox":[404,226,284,56]}
+{"kind":"shape","id":"sh/29gr2p8n","slide":9,"bbox":[744,208,494,96]}
+{"kind":"textbox","id":"sh/vu9knih4","slide":9,"text":"Often workflow-heavy; less natural-language explanation and rapid scenario storytelling","textPreview":"Often workflow-heavy; less natural-language explanation and rapid scenario storytelling","textChars":87,"textLines":1,"bbox":[758,226,466,56]}
+{"kind":"shape","id":"sh/kf6dcbul","slide":9,"bbox":[42,304,306,96]}
+{"kind":"textbox","id":"sh/d0z61032","slide":9,"text":"Market data terminals","textPreview":"Market data terminals","textChars":21,"textLines":1,"bbox":[56,322,278,56]}
+{"kind":"shape","id":"sh/2x4nap4r","slide":9,"bbox":[390,304,312,96]}
+{"kind":"textbox","id":"sh/vixczed8","slide":9,"text":"Real-time data, news, analytics, institutional research","textPreview":"Real-time data, news, analytics, institutional research","textChars":55,"textLines":1,"bbox":[404,322,284,56]}
+{"kind":"shape","id":"sh/neloj2t8","slide":9,"bbox":[744,304,494,96]}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":9,"text":"Not connected to the company-specific cash position and policy gate by default","textPreview":"Not connected to the company-specific cash position and policy gate by default","textChars":78,"textLines":1,"bbox":[758,322,466,56]}
+{"kind":"shape","id":"sh/5kb6xkf6","slide":9,"bbox":[42,400,306,96]}
+{"kind":"textbox","id":"sh/czed8v6p","slide":9,"text":"Spreadsheet models","textPreview":"Spreadsheet models","textChars":18,"textLines":1,"bbox":[56,418,278,56]}
+{"kind":"shape","id":"sh/nqxs72x4","slide":9,"bbox":[390,400,312,96]}
+{"kind":"textbox","id":"sh/u54zidon","slide":9,"text":"Flexible, familiar, cheap to start","textPreview":"Flexible, familiar, cheap to start","textChars":34,"textLines":1,"bbox":[404,418,284,56]}
+{"kind":"shape","id":"sh/5sneloj2","slide":9,"bbox":[744,400,494,96]}
+{"kind":"textbox","id":"sh/cbulwval","slide":9,"text":"Manual refresh, weak audit trail, slower stress testing and guardrail enforcement","textPreview":"Manual refresh, weak audit trail, slower stress testing and guardrail enforcement","textChars":81,"textLines":1,"bbox":[758,418,466,56]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":9,"text":"Market references: SAP S/4HANA Treasury & Risk Management; Bloomberg Terminal overview; public TMS category descriptions.","textPreview":"Market references: SAP S/4HANA Treasury & Risk Management; Bloomberg Terminal overview; public TMS category descriptions.","textChars":121,"textLines":1,"bbox":[742,636,496,32]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":9,"text":"Synthetic / illustrative data only. Not actual Nike financial data.","textPreview":"Synthetic / illustrative data only. Not actual Nike financial data.","textChars":67,"textLines":1,"bbox":[42,672,620,22]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1194,672,42,22]}
+{"kind":"notes","id":"nt/2kw02x","slide":9,"text":""}
+{"kind":"slide","id":"sl/94r2rf","slide":10,"title":"Agentic AI Treasury Advisor","textShapes":24}
+{"kind":"textbox","id":"sh/lwval87e","slide":10,"text":"Agentic AI Treasury Advisor","textPreview":"Agentic AI Treasury Advisor","textChars":27,"textLines":1,"bbox":[42,28,380,24]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":10,"text":"Pilot value: measurable liquidity, productivity, and control outcomes","textPreview":"Pilot value: measurable liquidity, productivity, and control outcomes","textChars":69,"textLines":1,"bbox":[42,58,1080,82]}
+{"kind":"shape","id":"sh/3q5o7qpg","slide":10,"bbox":[42,142,1196,0]}
+{"kind":"shape","id":"sh/w3m94fu1","slide":10,"bbox":[42,164,230,134]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":10,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[60,184,194,48]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":10,"text":"6-month pilot target","textPreview":"6-month pilot target","textChars":20,"textLines":1,"bbox":[60,238,194,28]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":10,"text":"Treasury scenarios live","textPreview":"Treasury scenarios live","textChars":23,"textLines":1,"bbox":[60,266,194,22]}
+{"kind":"shape","id":"sh/szqtcj6t","slide":10,"bbox":[300,164,230,134]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":10,"text":"90d","textPreview":"90d","textChars":3,"textLines":1,"bbox":[318,184,194,48]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":10,"text":"Forecast horizon","textPreview":"Forecast horizon","textChars":16,"textLines":1,"bbox":[318,238,194,28]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":10,"text":"Daily or scheduled run","textPreview":"Daily or scheduled run","textChars":22,"textLines":1,"bbox":[318,266,194,22]}
+{"kind":"shape","id":"sh/z61032ls","slide":10,"bbox":[558,164,230,134]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":10,"text":"100%","textPreview":"100%","textChars":4,"textLines":1,"bbox":[576,184,194,48]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":10,"text":"Approval boundary","textPreview":"Approval boundary","textChars":17,"textLines":1,"bbox":[576,238,194,28]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":10,"text":"High-impact actions gated","textPreview":"High-impact actions gated","textChars":25,"textLines":1,"bbox":[576,266,194,22]}
+{"kind":"shape","id":"sh/zupwb2hw","slide":10,"bbox":[816,164,230,134]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":10,"text":"100%","textPreview":"100%","textChars":4,"textLines":1,"bbox":[834,184,194,48]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":10,"text":"Audit coverage","textPreview":"Audit coverage","textChars":14,"textLines":1,"bbox":[834,238,194,28]}
+{"kind":"textbox","id":"sh/obm58z25","slide":10,"text":"Runs and decisions logged","textPreview":"Runs and decisions logged","textChars":25,"textLines":1,"bbox":[834,266,194,22]}
+{"kind":"textbox","id":"sh/knih4byh","slide":10,"text":"Bank value proposition","textPreview":"Bank value proposition","textChars":22,"textLines":1,"bbox":[42,356,420,30]}
+{"kind":"shape","id":"sh/d8bat47y","slide":10,"bbox":[46,414,8,8]}
+{"kind":"textbox","id":"sh/2lszqtcj","slide":10,"text":"Premium corporate treasury advisory tier for relationship managers","textPreview":"Premium corporate treasury advisory tier for relationship managers","textChars":66,"textLines":1,"bbox":[68,406,498,48]}
+{"kind":"shape","id":"sh/v6psfil0","slide":10,"bbox":[46,466,8,8]}
+{"kind":"textbox","id":"sh/kf6dcbul","slide":10,"text":"Lower emergency financing risk through earlier shortfall detection","textPreview":"Lower emergency financing risk through earlier shortfall detection","textChars":66,"textLines":1,"bbox":[68,458,498,48]}
+{"kind":"shape","id":"sh/d0z61032","slide":10,"bbox":[46,518,8,8]}
+{"kind":"textbox","id":"sh/29gr2p8n","slide":10,"text":"Higher advisor productivity from automated evidence assembly","textPreview":"Higher advisor productivity from automated evidence assembly","textChars":60,"textLines":1,"bbox":[68,510,498,48]}
+{"kind":"textbox","id":"sh/vu9knih4","slide":10,"text":"Pilot success criteria","textPreview":"Pilot success criteria","textChars":22,"textLines":1,"bbox":[690,356,420,30]}
+{"kind":"shape","id":"sh/k3q5o7qp","slide":10,"bbox":[694,414,8,8]}
+{"kind":"textbox","id":"sh/donyd0z6","slide":10,"text":"Daily forecast refresh with freshness and completeness scoring","textPreview":"Daily forecast refresh with freshness and completeness scoring","textChars":62,"textLines":1,"bbox":[716,406,498,48]}
+{"kind":"shape","id":"sh/3itgfmlk","slide":10,"bbox":[694,466,8,8]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":10,"text":"Every recommendation includes evidence, assumptions, risks, and policy results","textPreview":"Every recommendation includes evidence, assumptions, risks, and policy results","textChars":78,"textLines":1,"bbox":[716,458,498,48]}
+{"kind":"shape","id":"sh/loj2t83i","slide":10,"bbox":[694,518,8,8]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":10,"text":"Human approval decision captured before any execution outside the POC","textPreview":"Human approval decision captured before any execution outside the POC","textChars":69,"textLines":1,"bbox":[716,510,498,48]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":10,"text":"Synthetic / illustrative data only. Not actual Nike financial data.","textPreview":"Synthetic / illustrative data only. Not actual Nike financial data.","textChars":67,"textLines":1,"bbox":[42,672,620,22]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1194,672,42,22]}
+{"kind":"notes","id":"nt/94r2rf","slide":10,"text":""}
+{"kind":"slide","id":"sl/dslsaw","slide":11,"title":"Agentic AI Treasury Advisor","textShapes":17}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":11,"text":"Agentic AI Treasury Advisor","textPreview":"Agentic AI Treasury Advisor","textChars":27,"textLines":1,"bbox":[42,28,380,24]}
+{"kind":"textbox","id":"sh/9w3m94fu","slide":11,"text":"Risks are explicit design inputs, not appendix caveats","textPreview":"Risks are explicit design inputs, not appendix caveats","textChars":54,"textLines":1,"bbox":[42,58,1080,82]}
+{"kind":"shape","id":"sh/kb6xkf6d","slide":11,"bbox":[42,142,1196,0]}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":11,"text":"Data quality risk","textPreview":"Data quality risk","textChars":17,"textLines":1,"bbox":[42,166,260,28]}
+{"kind":"shape","id":"sh/2t83itgf","slide":11,"bbox":[326,158,372,58]}
+{"kind":"textbox","id":"sh/9knih4by","slide":11,"text":"Stale or missing AR/AP, payroll, market feeds","textPreview":"Stale or missing AR/AP, payroll, market feeds","textChars":45,"textLines":1,"bbox":[344,174,334,22]}
+{"kind":"shape","id":"sh/kzupwb2h","slide":11,"bbox":[742,158,454,58]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":11,"text":"Freshness checks, completeness score, request-data gate","textPreview":"Freshness checks, completeness score, request-data gate","textChars":55,"textLines":1,"bbox":[760,174,416,22]}
+{"kind":"textbox","id":"sh/2p8nqxs7","slide":11,"text":"Model risk","textPreview":"Model risk","textChars":10,"textLines":1,"bbox":[42,262,260,28]}
+{"kind":"shape","id":"sh/gvy90je9","slide":11,"bbox":[326,254,372,58]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":11,"text":"Overconfident forecasts or stress-test assumptions","textPreview":"Overconfident forecasts or stress-test assumptions","textChars":50,"textLines":1,"bbox":[344,270,334,22]}
+{"kind":"shape","id":"sh/2p8nqxs7","slide":11,"bbox":[742,254,454,58]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":11,"text":"Baseline model transparency, confidence scoring, human review","textPreview":"Baseline model transparency, confidence scoring, human review","textChars":61,"textLines":1,"bbox":[760,270,416,22]}
+{"kind":"textbox","id":"sh/kjm1cfa9","slide":11,"text":"Operational risk","textPreview":"Operational risk","textChars":16,"textLines":1,"bbox":[42,358,260,28]}
+{"kind":"shape","id":"sh/94fu18jq","slide":11,"bbox":[326,350,372,58]}
+{"kind":"textbox","id":"sh/2hwfyxob","slide":11,"text":"LLM fabricates numbers or recommends unsupported action","textPreview":"LLM fabricates numbers or recommends unsupported action","textChars":55,"textLines":1,"bbox":[344,366,334,22]}
+{"kind":"shape","id":"sh/r2p8nqxs","slide":11,"bbox":[742,350,454,58]}
+{"kind":"textbox","id":"sh/kb6xkf6d","slide":11,"text":"No invented numbers, structured tool outputs, grounding checks","textPreview":"No invented numbers, structured tool outputs, grounding checks","textChars":62,"textLines":1,"bbox":[760,366,416,22]}
+{"kind":"textbox","id":"sh/9w3m94fu","slide":11,"text":"Regulatory risk","textPreview":"Regulatory risk","textChars":15,"textLines":1,"bbox":[42,454,260,28]}
+{"kind":"shape","id":"sh/dg7adsji","slide":11,"bbox":[326,446,372,58]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":11,"text":"Advice crosses approval or suitability boundary","textPreview":"Advice crosses approval or suitability boundary","textChars":47,"textLines":1,"bbox":[344,462,334,22]}
+{"kind":"shape","id":"sh/vahoza1g","slide":11,"bbox":[742,446,454,58]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":11,"text":"Policy-as-code, role/access placeholder, audit trail","textPreview":"Policy-as-code, role/access placeholder, audit trail","textChars":52,"textLines":1,"bbox":[760,462,416,22]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":11,"text":"Q&A stance: the prototype demonstrates decision behavior, not real-world forecast accuracy, production security, or financial execution.","textPreview":"Q&A stance: the prototype demonstrates decision behavior, not real-world forecast accuracy, production security, or financial execution.","textChars":136,"textLines":1,"bbox":[42,590,1060,34]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":11,"text":"Synthetic / illustrative data only. Not actual Nike financial data.","textPreview":"Synthetic / illustrative data only. Not actual Nike financial data.","textChars":67,"textLines":1,"bbox":[42,672,620,22]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1194,672,42,22]}
+{"kind":"notes","id":"nt/dslsaw","slide":11,"text":""}
+{"kind":"slide","id":"sl/p60rgl","slide":12,"title":"Agentic AI Treasury Advisor","textShapes":9}
+{"kind":"textbox","id":"sh/je9cvixc","slide":12,"text":"Agentic AI Treasury Advisor","textPreview":"Agentic AI Treasury Advisor","textChars":27,"textLines":1,"bbox":[42,28,380,24]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":12,"text":"Closing claim: agentic AI is useful when the control plane is visible","textPreview":"Closing claim: agentic AI is useful when the control plane is visible","textChars":69,"textLines":1,"bbox":[42,58,1080,82]}
+{"kind":"shape","id":"sh/1gvy90je","slide":12,"bbox":[42,142,1196,0]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":12,"text":"This POC shows an end-to-end treasury advisor that can explain the why, prove the math, respect hard rules, and stop before execution.","textPreview":"This POC shows an end-to-end treasury advisor that can explain the why, prove the math, respect hard rules, and stop before execution.","textChars":134,"textLines":1,"bbox":[42,164,1020,102]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":12,"text":"Reason over context","textPreview":"Reason over context","textChars":19,"textLines":1,"bbox":[42,330,360,110]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":12,"text":"Validate with tools","textPreview":"Validate with tools","textChars":19,"textLines":1,"bbox":[462,330,360,110]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":12,"text":"Escalate to humans","textPreview":"Escalate to humans","textChars":18,"textLines":1,"bbox":[882,330,300,110]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":12,"text":"Demo path: choose scenario -> inspect forecast -> review recommendation -> approve/reject -> audit log.","textPreview":"Demo path: choose scenario -> inspect forecast -> review recommendation -> approve/reject -> audit log.","textChars":103,"textLines":1,"bbox":[42,526,900,32]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":12,"text":"Synthetic / illustrative data only. Not actual Nike financial data.","textPreview":"Synthetic / illustrative data only. Not actual Nike financial data.","textChars":67,"textLines":1,"bbox":[42,672,620,22]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1194,672,42,22]}
+{"kind":"notes","id":"nt/p60rgl","slide":12,"text":""}
