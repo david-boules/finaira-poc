@@ -9,7 +9,7 @@ import urllib.request
 def generate_explanation(
     tool_outputs: dict,
     policy_context: list,
-    provider_preference: str = "template",
+    provider_preference: str = "ollama",
     model_name: str | None = None,
 ) -> dict:
     rec = tool_outputs["recommendation"]
@@ -34,12 +34,6 @@ def generate_explanation(
         if live:
             narrative = live
             provider = f"ollama:{ollama_model}"
-    elif provider_preference == "openai":
-        api_key = os.getenv("OPENAI_API_KEY")
-        live = _call_openai_explanation(api_key, tool_outputs, policy_context, model_name) if api_key else None
-        if live:
-            narrative = live
-            provider = f"openai:{model_name or os.getenv('OPENAI_MODEL', 'gpt-4.1-mini')}"
     return {
         "provider": provider,
         "narrative": narrative,
@@ -48,62 +42,6 @@ def generate_explanation(
             for item in policy_context
         ],
     }
-
-
-def _call_openai_explanation(
-    api_key: str,
-    tool_outputs: dict,
-    policy_context: list,
-    model_name: str | None = None,
-) -> str | None:
-    rec = tool_outputs["recommendation"]
-    payload = {
-        "model": model_name or os.getenv("OPENAI_MODEL", "gpt-4.1-mini"),
-        "input": [
-            {
-                "role": "system",
-                "content": (
-                    "You explain corporate treasury recommendations. Use only the JSON tool outputs. "
-                    "Do not invent numbers. State that execution requires human approval."
-                ),
-            },
-            {
-                "role": "user",
-                "content": json.dumps(
-                    {
-                        "recommendation": rec.as_dict(),
-                        "analysis": tool_outputs["analysis"].__dict__,
-                        "confidence": tool_outputs["confidence"].__dict__,
-                        "simulation": tool_outputs["simulation"].__dict__ | {"percentiles": "omitted"},
-                        "policy_context": [item.__dict__ for item in policy_context],
-                    },
-                    default=str,
-                ),
-            },
-        ],
-    }
-    request = urllib.request.Request(
-        "https://api.openai.com/v1/responses",
-        data=json.dumps(payload).encode("utf-8"),
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json",
-        },
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(request, timeout=20) as response:
-            data = json.loads(response.read().decode("utf-8"))
-        if data.get("output_text"):
-            return data["output_text"]
-        chunks = []
-        for item in data.get("output", []):
-            for content in item.get("content", []):
-                if content.get("type") in {"output_text", "text"}:
-                    chunks.append(content.get("text", ""))
-        return "\n".join(chunk for chunk in chunks if chunk).strip() or None
-    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, ValueError):
-        return None
 
 
 def _call_ollama_explanation(model_name: str, tool_outputs: dict, policy_context: list) -> str | None:

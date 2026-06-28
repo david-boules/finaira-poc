@@ -131,62 +131,7 @@ st.markdown(
     .workflow-step.complete { color:#075e54; background:#e7fbf5; border-color:#a8ece0; }
     .workflow-step.attention { color:#855a00; background:#fff7df; border-color:#f2d38b; }
     .workflow-step.blocked { color:#8b1d16; background:#fff0ee; border-color:#f2b8b3; }
-    .agent-grid {
-        display:grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap:0.8rem;
-    }
-    .agent-card {
-        background:white;
-        border:1px solid var(--finaira-line);
-        border-radius:8px;
-        padding:1rem;
-        min-height:164px;
-        box-shadow:0 8px 22px rgba(7,25,35,0.045);
-    }
-    .agent-card.complete { border-left:5px solid var(--finaira-teal); }
-    .agent-card.attention { border-left:5px solid var(--finaira-amber); }
-    .agent-card.blocked { border-left:5px solid var(--finaira-red); }
-    .agent-title {
-        display:flex;
-        justify-content:space-between;
-        gap:0.7rem;
-        align-items:flex-start;
-        margin-bottom:0.45rem;
-    }
-    .agent-title strong { color:var(--finaira-ink); font-size:1rem; }
-    .agent-status {
-        font-size:0.68rem;
-        letter-spacing:0.06em;
-        text-transform:uppercase;
-        font-weight:800;
-        padding:0.18rem 0.42rem;
-        border-radius:999px;
-        background:#eef6f5;
-        color:#075e54;
-        white-space:nowrap;
-    }
-    .agent-status.attention { background:#fff4d6; color:#855a00; }
-    .agent-status.blocked { background:#ffe8e5; color:#8b1d16; }
-    .agent-role {
-        color:var(--finaira-slate);
-        font-size:0.86rem;
-        line-height:1.35;
-        margin-bottom:0.7rem;
-    }
-    .agent-output {
-        background:#f7fbfb;
-        border:1px solid #e1eeee;
-        border-radius:6px;
-        padding:0.65rem;
-        font-size:0.87rem;
-        color:#12313a;
-        margin-bottom:0.55rem;
-    }
-    .agent-handoff {
-        color:#6a838b;
-        font-size:0.78rem;
-    }
+    .small-muted { color:#64748b; font-size:0.9rem; }
     .architecture-band {
         background:white;
         border:1px solid var(--finaira-line);
@@ -209,7 +154,7 @@ st.markdown(
     .arch-node strong { color:var(--finaira-navy); }
     .arch-node span { display:block; color:var(--finaira-slate); font-size:0.82rem; margin-top:0.35rem; }
     @media (max-width: 900px) {
-        .agent-grid, .arch-grid { grid-template-columns: 1fr; }
+        .arch-grid { grid-template-columns: 1fr; }
     }
     </style>
     """,
@@ -255,15 +200,14 @@ with st.sidebar:
     simulation_seed = st.number_input("Monte Carlo seed", value=20260628, step=1)
     llm_provider = st.selectbox(
         "Explanation provider",
-        options=["template", "ollama", "openai"],
+        options=["ollama", "template"],
+        index=0,
         format_func=lambda value: {
-            "template": "Template fallback",
             "ollama": "Local Ollama",
-            "openai": "OpenAI API",
+            "template": "Template fallback",
         }[value],
     )
-    default_llm_model = "llama3.2" if llm_provider == "ollama" else "gpt-5.4-nano"
-    llm_model = st.text_input("Explanation model", value=default_llm_model)
+    llm_model = st.text_input("Explanation model", value="llama3.2")
     scope = classify_treasury_scope(user_request)
     st.write("Scope gate:", "PASS" if scope.in_scope else "REDIRECT")
     st.write("Reference date:", BASE_DATE.date().isoformat())
@@ -317,23 +261,13 @@ def render_workflow_stepper(trace: list[dict]) -> None:
 
 
 def render_agent_cards(trace: list[dict]) -> None:
-    cards = []
     for step in trace:
-        status = escape(step["status"])
-        cards.append(
-            f"""
-            <div class="agent-card {status}">
-                <div class="agent-title">
-                    <strong>{escape(step["agent"])}</strong>
-                    <span class="agent-status {status}">{status}</span>
-                </div>
-                <div class="agent-role">{escape(step["role"])}</div>
-                <div class="agent-output">{escape(step["output"])}</div>
-                <div class="agent-handoff">{escape(step["handoff"])}</div>
-            </div>
-            """
-        )
-    st.markdown('<div class="agent-grid">' + "".join(cards) + "</div>", unsafe_allow_html=True)
+        status = step["status"]
+        label = f"{step['agent']} — {status.upper()}"
+        with st.expander(label, expanded=False):
+            st.caption(step["role"])
+            st.write(step["output"])
+            st.caption(f"Handoff: {step['handoff']}")
 
 
 def render_architecture() -> None:
@@ -343,7 +277,7 @@ def render_architecture() -> None:
         ("Agent Graph", "Request, ingestion, cashflow, insight, risk, allocation, reporting."),
         ("Deterministic Tools", "Forecasts, surplus math, Monte Carlo, stress, policy checks."),
         ("Knowledge + RAG", "Synthetic treasury, investment, and liquidity policy retrieval."),
-        ("LLM Narrative", "Ollama/OpenAI/template explanation using structured tool outputs."),
+        ("LLM Narrative", "Ollama or template explanation using structured tool outputs."),
         ("Confidence Gate", "Recommend, warn, request data, withhold, or block."),
         ("Human Approval", "Approve, modify, reject, and write audit memory."),
     ]
@@ -385,7 +319,7 @@ with walkthrough_tab:
     st.write("6. Confidence gate and human approval checkpoint control what can be shown or logged.")
     st.info(
         "Model stack: deterministic roll-forward, optional statistical model, 1,000-path Monte Carlo, static market adapter, "
-        "keyword RAG over synthetic policy docs, optional OpenAI Responses API narrative, deterministic policy gate."
+        "keyword RAG over synthetic policy docs, optional Ollama narrative, deterministic policy gate."
     )
     st.write("Current LLM provider:", explanation["provider"])
 
@@ -423,10 +357,6 @@ with dashboard_tab:
     chart = forecast.frame[["date", "projected_cash", "lower_bound", "upper_bound"]].set_index("date")
     st.line_chart(chart)
 
-    st.write("Monte Carlo forecast fan")
-    fan = simulation.percentiles.set_index("date")
-    st.line_chart(fan)
-
 with analysis_tab:
     st.subheader("Cash Forecast and Working Capital")
     left, right = st.columns([2, 1])
@@ -457,31 +387,6 @@ with analysis_tab:
         st.write("Weak points")
         for point in analysis.weak_points:
             st.write(f"- {point}")
-
-    st.divider()
-    st.subheader("Statistical Forecast Backtest")
-    m1, m2, m3, m4 = st.columns(4)
-    m1.metric("Model", statistical_forecast.model_name)
-    m2.metric("MAE", money(statistical_forecast.backtest.mae))
-    m3.metric("RMSE", money(statistical_forecast.backtest.rmse))
-    m4.metric("Bias", money(statistical_forecast.backtest.bias))
-    st.write("Component model choices")
-    st.dataframe(
-        pd.DataFrame(
-            [{"component": key, "model": value} for key, value in statistical_forecast.component_models.items()]
-        ),
-        hide_index=True,
-    )
-
-    st.divider()
-    st.subheader("Stress Test")
-    st.write("Receivables delayed 15 days and FX cash outflows rise 10%.")
-    c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Stress Min Cash", money(stress.minimum_projected_cash))
-    c2.metric("Stress Shortfall", money(stress.shortfall))
-    c3.metric("Stress Surplus", money(stress.investable_surplus))
-    c4.metric("Robustness", f"{stress.robustness_score:.1f}")
-    st.info(stress.summary)
 
 with recommendation_tab:
     st.subheader(recommendation.title)
@@ -516,51 +421,6 @@ with recommendation_tab:
 
     st.write("Expected benefit")
     st.info(recommendation.expected_benefit)
-
-    st.subheader("Retrieved Synthetic Policy Context")
-    if explanation["policy_context"]:
-        st.dataframe(pd.DataFrame(explanation["policy_context"]), hide_index=True)
-    else:
-        st.write("No policy passages retrieved.")
-
-    st.subheader("Policy Checks")
-    policy_rows = [
-        {
-            "check": check.name,
-            "status": "PASS" if check.passed else "FAIL",
-            "severity": check.severity,
-            "message": check.message,
-        }
-        for check in policy.checks
-    ]
-    st.dataframe(pd.DataFrame(policy_rows), hide_index=True)
-
-    st.subheader("Decision Confidence Gate")
-    st.dataframe(
-        pd.DataFrame(
-            [{"factor": key.replace("_", " "), "score": value} for key, value in confidence.factors.items()]
-        ),
-        hide_index=True,
-    )
-
-    st.subheader("Grounding Manifest")
-    st.dataframe(pd.DataFrame(grounding.sources), hide_index=True)
-
-    st.subheader("Monte Carlo Risk Evidence")
-    st.dataframe(
-        pd.DataFrame(
-            [
-                {"metric": "simulation count", "value": simulation.simulation_count},
-                {"metric": "seed", "value": simulation.seed},
-                {"metric": "probability reserve breach", "value": f"{simulation.probability_reserve_breach:.1f}%"},
-                {"metric": "probability positive surplus", "value": f"{simulation.probability_positive_surplus:.1f}%"},
-                {"metric": "p10 ending cash", "value": money(simulation.p10_ending_cash)},
-                {"metric": "median ending cash", "value": money(simulation.median_ending_cash)},
-                {"metric": "p90 ending cash", "value": money(simulation.p90_ending_cash)},
-            ]
-        ).astype(str),
-        hide_index=True,
-    )
 
 with approval_tab:
     st.subheader("Human Approval Boundary")

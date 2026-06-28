@@ -11,10 +11,10 @@ USD_M = "USD millions"
 
 
 SCENARIOS = {
-    "healthy_surplus": "Healthy surplus",
-    "liquidity_shortfall": "Liquidity shortfall",
-    "stale_missing_data": "Stale or missing data",
-    "stress_receivables_fx": "Stressed receivables or FX conditions",
+    "healthy_surplus": "Scenario 1",
+    "liquidity_shortfall": "Scenario 2",
+    "stale_missing_data": "Scenario 3",
+    "stress_receivables_fx": "Scenario 4",
 }
 
 

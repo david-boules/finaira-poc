@@ -27,7 +27,7 @@ def run_scenario(
     log_recommendation: bool = False,
     forecast_model: str = "exp_smoothing",
     simulation_seed: int = 20260628,
-    llm_provider: str = "template",
+    llm_provider: str = "ollama",
     llm_model: str | None = None,
 ) -> dict:
     ensure_synthetic_data()

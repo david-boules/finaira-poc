@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from .config import SCENARIOS
+
 
 def build_agent_trace(result: dict) -> list[dict]:
     quality = result["quality"]
@@ -19,7 +21,7 @@ def build_agent_trace(result: dict) -> list[dict]:
             "agent": "Scope Guardrail",
             "role": "Allows only corporate treasury requests; redirects unrelated or personal-investment requests before the supervisor runs.",
             "status": "complete",
-            "output": f"Scenario routed: {result['scenario'].replace('_', ' ')}.",
+            "output": f"Scenario routed: {SCENARIOS[result['scenario']]}",
             "handoff": "Passes scoped request to data ingestion.",
         },
         {

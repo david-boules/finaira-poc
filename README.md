@@ -11,9 +11,9 @@ python3 -m pip install -r requirements.txt
 python3 -m streamlit run app.py
 ```
 
-## Optional Local LLM With Ollama
+## Explanation Layer
 
-Ollama is supported through the app sidebar. Choose `Local Ollama` as the explanation provider and use a local model such as `llama3.2`.
+Ollama is the default explanation provider. Use a local model such as `llama3.2`.
 
 ```bash
 ollama pull llama3.2
@@ -33,7 +33,7 @@ python3 -m unittest discover -s tests
 
 - Reproducible synthetic treasury data with fixed random seeds.
 - Finaira-inspired glass-box execution UI with visible agent trace.
-- Four selectable scenarios: healthy surplus, liquidity shortfall, stale/missing data, and stressed receivables/FX.
+- Four selectable scenarios (Scenario 1–4).
 - 30/60/90-day cash forecast.
 - Genuine investable surplus after protecting reserves, payroll, debt service, planned expansion capex, and a liquidity buffer.
 - Hard treasury policy checks.
