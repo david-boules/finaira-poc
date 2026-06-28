@@ -156,22 +156,6 @@ st.markdown(
         overflow-wrap: anywhere;
         word-break: normal;
     }
-    .synthetic-banner {
-        background:#fff8e6;
-        border:1px solid #f3d28b;
-        color:#6f4c00;
-        padding:0.75rem 1rem;
-        border-radius:6px;
-        font-weight:700;
-        margin-bottom:1rem;
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-        text-align: center;
-        line-height: 1.4;
-        overflow: visible;
-        overflow-wrap: anywhere;
-    }
     .status-badge-wrap {
         text-align: center;
         margin-bottom: 0.5rem;
@@ -270,10 +254,6 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.markdown(
-    "<div class='synthetic-banner'>Synthetic / illustrative data only. This is not actual company financial data and does not execute financial transactions.</div>",
-    unsafe_allow_html=True,
-)
 st.markdown(
     '<div class="finaira-header"><div class="finaira-header-title">HiveFin: An Agentic Corporate Treasury Advisor</div></div>',
     unsafe_allow_html=True,
