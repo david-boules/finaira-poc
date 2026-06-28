@@ -19,6 +19,18 @@ def money(value: float) -> str:
     return f"${value:,.1f}M"
 
 
+def md_safe(text: str) -> str:
+    """Escape dollar signs so Streamlit markdown does not treat amounts as LaTeX."""
+    return text.replace("$", r"\$")
+
+
+def info_box(text: str) -> None:
+    st.markdown(
+        f'<div class="hive-info-box">{escape(text)}</div>',
+        unsafe_allow_html=True,
+    )
+
+
 def status_badge(status: str) -> str:
     colors = {
         "RECOMMEND": "#0f766e",
@@ -28,9 +40,10 @@ def status_badge(status: str) -> str:
         "BLOCK": "#7f1d1d",
     }
     return (
+        f'<div class="status-badge-wrap">'
         f"<span style='background:{colors.get(status, '#334155')}; color:white; "
         "padding:0.25rem 0.55rem; border-radius:999px; font-weight:700;'>"
-        f"{status}</span>"
+        f"{status}</span></div>"
     )
 
 
@@ -69,19 +82,39 @@ st.markdown(
         padding-top: 1.4rem;
         max-width: 1480px;
     }
+    [data-testid="stMarkdownContainer"] {
+        overflow: visible;
+    }
+    [data-testid="stMarkdownContainer"] > div {
+        overflow: visible;
+        max-width: 100%;
+    }
     .finaira-header {
         background: linear-gradient(135deg, #071923 0%, #0b3640 62%, #0f766e 100%);
         border-radius: 8px;
         border: 1px solid rgba(255,255,255,0.12);
-        padding: 1.35rem 1.5rem;
+        padding: 1.15rem 1.25rem;
         margin-bottom: 1rem;
         color: white;
         box-shadow: 0 16px 40px rgba(7,25,35,0.16);
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        overflow: visible;
     }
-    .finaira-header h1 {
+    .finaira-header-title {
         margin: 0;
-        font-size: 2rem;
+        font-size: clamp(1.2rem, 2.2vw, 1.85rem);
+        font-weight: 700;
+        line-height: 1.35;
         letter-spacing: 0;
+        text-align: center;
+        color: #ffffff;
+        white-space: normal;
+        overflow: visible;
+        overflow-wrap: anywhere;
+        word-break: normal;
     }
     .synthetic-banner {
         background:#fff8e6;
@@ -91,6 +124,27 @@ st.markdown(
         border-radius:6px;
         font-weight:700;
         margin-bottom:1rem;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 1.4;
+        overflow: visible;
+        overflow-wrap: anywhere;
+    }
+    .status-badge-wrap {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    .hive-info-box {
+        background: #e8f4fd;
+        border: 1px solid #b9daf7;
+        border-radius: 0.5rem;
+        padding: 1rem 1.1rem;
+        color: #1e3a5f;
+        font-size: 1rem;
+        line-height: 1.55;
+        margin: 0.25rem 0 1rem 0;
     }
     .small-muted { color:#64748b; font-size:0.9rem; }
     .workflow-container {
@@ -102,11 +156,14 @@ st.markdown(
         border:1px solid var(--finaira-line);
         border-radius:8px;
         margin-bottom:1rem;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
     .workflow-step {
         flex:1;
         min-width:110px;
-        padding:0.45rem 0.55rem;
+        padding:0.55rem 0.45rem;
         border-radius:6px;
         font-size:0.76rem;
         font-weight:700;
@@ -114,6 +171,11 @@ st.markdown(
         border:1px solid var(--finaira-line);
         color:var(--finaira-slate);
         background:#f8fbfb;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        line-height:1.25;
+        overflow-wrap:anywhere;
     }
     .workflow-step.complete { color:#075e54; background:#e7fbf5; border-color:#a8ece0; }
     .workflow-step.attention { color:#855a00; background:#fff7df; border-color:#f2d38b; }
@@ -125,6 +187,10 @@ st.markdown(
         border-radius:8px;
         padding:1rem;
         margin-bottom:1rem;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        text-align: center;
     }
     .arch-grid {
         display:grid;
@@ -137,9 +203,25 @@ st.markdown(
         padding:0.8rem;
         background:#fbfefe;
         min-height:110px;
+        text-align: center;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
     }
-    .arch-node strong { color:var(--finaira-navy); }
-    .arch-node span { display:block; color:var(--finaira-slate); font-size:0.82rem; margin-top:0.35rem; }
+    .arch-node strong {
+        color:var(--finaira-navy);
+        display:block;
+        text-align:center;
+    }
+    .arch-node span {
+        display:block;
+        color:var(--finaira-slate);
+        font-size:0.82rem;
+        margin-top:0.35rem;
+        text-align:center;
+        line-height:1.35;
+    }
     @media (max-width: 900px) {
         .arch-grid { grid-template-columns: 1fr; }
     }
@@ -153,11 +235,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 st.markdown(
-    """
-    <div class="finaira-header">
-        <h1>HiveFin: An Agentic Corporate Treasury Advisor</h1>
-    </div>
-    """,
+    '<div class="finaira-header"><div class="finaira-header-title">HiveFin: An Agentic Corporate Treasury Advisor</div></div>',
     unsafe_allow_html=True,
 )
 
@@ -333,11 +411,11 @@ with dashboard_tab:
         else f"Recommended action: {recommendation.title}"
     )
     if confidence.status in {"BLOCK", "REQUEST DATA", "WITHHOLD"}:
-        st.warning(alert)
+        st.warning(md_safe(alert))
     elif confidence.status == "RECOMMEND WITH WARNING":
-        st.warning(alert)
+        st.warning(md_safe(alert))
     else:
-        st.success(alert)
+        st.success(md_safe(alert))
 
     chart = forecast.frame[["date", "projected_cash", "lower_bound", "upper_bound"]].set_index("date")
     st.line_chart(chart)
@@ -377,8 +455,8 @@ with recommendation_tab:
     st.subheader(recommendation.title)
     st.write("LLM / narrative layer")
     st.caption(f"Provider: {explanation['provider']}")
-    st.info(explanation["narrative"])
-    st.write(f"Amount: **{money(recommendation.amount)} {recommendation.currency}**")
+    info_box(explanation["narrative"])
+    st.write(md_safe(f"Amount: **{money(recommendation.amount)} {recommendation.currency}**"))
     st.write(f"Horizon: **{recommendation.horizon_days} days**")
     if recommendation.instrument:
         st.write(
@@ -394,18 +472,18 @@ with recommendation_tab:
     with c1:
         st.write("Evidence")
         for item in recommendation.evidence:
-            st.write(f"- {item}")
+            st.write(md_safe(f"- {item}"))
     with c2:
         st.write("Assumptions")
         for item in recommendation.assumptions:
-            st.write(f"- {item}")
+            st.write(md_safe(f"- {item}"))
     with c3:
         st.write("Risks")
         for item in recommendation.risks:
-            st.write(f"- {item}")
+            st.write(md_safe(f"- {item}"))
 
     st.write("Expected benefit")
-    st.info(recommendation.expected_benefit)
+    info_box(recommendation.expected_benefit)
 
 with approval_tab:
     st.subheader("Human Approval Boundary")
