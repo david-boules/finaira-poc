@@ -12,7 +12,8 @@ class AgentTraceTests(unittest.TestCase):
         self.assertIn("Data Quality Guardrail", agents)
         self.assertIn("Cashflow Forecast Agent", agents)
         self.assertIn("Grounding Guardrail", agents)
-        self.assertIn("Risk Agent", agents)
+        self.assertIn("Investment Agent", agents)
+        self.assertIn("Risk", agents)
         self.assertIn("Decision Confidence Gate", agents)
         self.assertIn("Human-in-the-Loop Checkpoint", agents)
 

@@ -56,18 +56,18 @@ def build_agent_trace(result: dict) -> list[dict]:
         },
         {
             "id": "insight",
-            "agent": "Insight Agent",
+            "agent": "Insight",
             "role": "Detects surplus, shortfall, and working-capital weak points.",
             "status": "attention" if analysis.shortfall > 0 else "complete",
             "output": (
                 f"Investable surplus {analysis.investable_surplus:.1f}M; reserve shortfall "
                 f"{analysis.shortfall:.1f}M."
             ),
-            "handoff": "Frames the financial problem for risk and capital allocation agents.",
+            "handoff": "Frames the financial problem for risk assessment and investment comparison.",
         },
         {
             "id": "risk",
-            "agent": "Risk Agent",
+            "agent": "Risk",
             "role": "Runs Monte Carlo reserve-breach probability and receivables/FX stress testing.",
             "status": "attention" if simulation.probability_reserve_breach > 15 or stress.shortfall > 0 else "complete",
             "output": (
@@ -78,7 +78,7 @@ def build_agent_trace(result: dict) -> list[dict]:
         },
         {
             "id": "capital",
-            "agent": "Capital Allocation Agent",
+            "agent": "Investment Agent",
             "role": "Compares preserve cash, invest surplus, financing, working-capital, debt, and FX actions.",
             "status": "complete",
             "output": f"Draft action: {recommendation.title}; amount {recommendation.amount:.1f}M.",
@@ -102,7 +102,7 @@ def build_agent_trace(result: dict) -> list[dict]:
         },
         {
             "id": "reporting",
-            "agent": "Reporting Agent",
+            "agent": "Reporting",
             "role": "Retrieves policy context and produces the treasurer-ready explanation.",
             "status": "complete",
             "output": f"Narrative provider: {explanation['provider']}.",

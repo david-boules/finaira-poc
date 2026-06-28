@@ -9,7 +9,7 @@ from treasury_advisor.orchestrator import make_audit_record, run_scenario
 
 
 st.set_page_config(
-    page_title="Agentic AI Corporate Treasury Advisor PoC",
+    page_title="HiveFin: An Agentic Corporate Treasury Advisor",
     page_icon="",
     layout="wide",
 )
@@ -78,23 +78,10 @@ st.markdown(
         color: white;
         box-shadow: 0 16px 40px rgba(7,25,35,0.16);
     }
-    .finaira-kicker {
-        color: #96f2e5;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        font-size: 0.72rem;
-        margin-bottom: 0.35rem;
-    }
     .finaira-header h1 {
         margin: 0;
         font-size: 2rem;
         letter-spacing: 0;
-    }
-    .finaira-header p {
-        margin: 0.45rem 0 0 0;
-        color: #d7f8f2;
-        max-width: 980px;
     }
     .synthetic-banner {
         background:#fff8e6;
@@ -162,15 +149,13 @@ st.markdown(
 )
 
 st.markdown(
-    "<div class='synthetic-banner'>Synthetic / illustrative data only. This is not actual Nike financial data and does not execute financial transactions.</div>",
+    "<div class='synthetic-banner'>Synthetic / illustrative data only. This is not actual company financial data and does not execute financial transactions.</div>",
     unsafe_allow_html=True,
 )
 st.markdown(
     """
     <div class="finaira-header">
-        <div class="finaira-kicker">Finaira Treasury Intelligence Lab</div>
-        <h1>Agentic AI Corporate Treasury Advisor</h1>
-        <p>Glass-box treasury workflow for synthetic Nike scenarios: agents coordinate, deterministic tools calculate, policies enforce, humans approve.</p>
+        <h1>HiveFin: An Agentic Corporate Treasury Advisor</h1>
     </div>
     """,
     unsafe_allow_html=True,
@@ -251,7 +236,7 @@ grounding = result["grounding"]
 def render_workflow_stepper(trace: list[dict]) -> None:
     parts = []
     for step in trace:
-        label = escape(step["agent"].replace(" Agent", "").replace("Decision ", ""))
+        label = escape(step["agent"])
         status = escape(step["status"])
         parts.append(f'<span class="workflow-step {status}">{label}</span>')
     st.markdown(
@@ -274,7 +259,7 @@ def render_architecture() -> None:
     nodes = [
         ("Corporate Request", "Scenario, role, scope, and user intent."),
         ("Internal + External Data", "Synthetic treasury ledger, market snapshot, policy docs."),
-        ("Agent Graph", "Request, ingestion, cashflow, insight, risk, allocation, reporting."),
+        ("Processing Pipeline", "Request, ingestion, cashflow, insight, risk, investment, reporting."),
         ("Deterministic Tools", "Forecasts, surplus math, Monte Carlo, stress, policy checks."),
         ("Knowledge + RAG", "Synthetic treasury, investment, and liquidity policy retrieval."),
         ("LLM Narrative", "Ollama or template explanation using structured tool outputs."),
@@ -288,13 +273,13 @@ def render_architecture() -> None:
     st.markdown('<div class="architecture-band"><div class="arch-grid">' + html + "</div></div>", unsafe_allow_html=True)
 
 
-agent_tab, walkthrough_tab, dashboard_tab, analysis_tab, recommendation_tab, approval_tab, audit_tab = st.tabs(
-    ["Agent Run", "Architecture", "Dashboard", "Analysis", "Recommendation", "Approval", "Audit"]
+workflow_tab, walkthrough_tab, dashboard_tab, analysis_tab, recommendation_tab, approval_tab, audit_tab = st.tabs(
+    ["Workflow", "Architecture", "Dashboard", "Analysis", "Recommendation", "Approval", "Audit"]
 )
 
-with agent_tab:
-    st.subheader("Live Agent Execution Trace")
-    st.caption("Modeled from the new architecture sketches: request change, data ingestion, cashflow, insight, risk, capital allocation, reporting, and human approval.")
+with workflow_tab:
+    st.subheader("Live Execution Trace")
+    st.caption("Request, data ingestion, cashflow forecast, insight, risk, investment, reporting, and human approval.")
     render_workflow_stepper(agent_trace)
     render_agent_cards(agent_trace)
     st.subheader("Guardrail Status")
@@ -313,9 +298,9 @@ with walkthrough_tab:
     render_architecture()
     st.write("1. User request is scoped to corporate treasury.")
     st.write("2. Data ingestion loads internal treasury data and external/static market context.")
-    st.write("3. Cashflow and insight agents forecast, diagnose, and calculate surplus or shortfall.")
-    st.write("4. Risk and investment agents compare actions under stress and stochastic simulation.")
-    st.write("5. Reporting agent retrieves policy context and writes the narrative.")
+    st.write("3. The cashflow forecast agent projects cash; insight and risk modules diagnose surplus or shortfall.")
+    st.write("4. The investment agent compares actions under stress and stochastic simulation.")
+    st.write("5. Reporting retrieves policy context and writes the narrative.")
     st.write("6. Confidence gate and human approval checkpoint control what can be shown or logged.")
     st.info(
         "Model stack: deterministic roll-forward, optional statistical model, 1,000-path Monte Carlo, static market adapter, "

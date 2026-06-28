@@ -1,8 +1,8 @@
-# Agentic AI Corporate Treasury Advisor PoC
+# HiveFin: An Agentic Corporate Treasury Advisor PoC
 
-Presentation-ready vertical slice for a synthetic Nike corporate treasury case study.
+Presentation-ready vertical slice using synthetic corporate treasury data for an arbitrary company.
 
-All data is synthetic / illustrative and not actual Nike financial data. The prototype does not execute trades, transfers, borrowing, debt changes, payment delays, or FX transactions.
+All data is synthetic / illustrative and not actual company financial data. The prototype does not execute trades, transfers, borrowing, debt changes, payment delays, or FX transactions.
 
 ## Run
 
@@ -32,7 +32,7 @@ python3 -m unittest discover -s tests
 ## What It Demonstrates
 
 - Reproducible synthetic treasury data with fixed random seeds.
-- Finaira-inspired glass-box execution UI with visible agent trace.
+- HiveFin glass-box execution UI with visible workflow trace.
 - Four selectable scenarios (Scenario 1–4).
 - 30/60/90-day cash forecast.
 - Genuine investable surplus after protecting reserves, payroll, debt service, planned expansion capex, and a liquidity buffer.
