@@ -47,6 +47,46 @@ def status_badge(status: str) -> str:
     )
 
 
+def data_quality_evidence(quality) -> str:
+    details = [
+        f"Completeness {quality.completeness_score:.1f}%",
+        f"freshness {quality.freshness_score:.1f}%",
+        f"stale days {quality.stale_days}",
+    ]
+    if quality.missing_fields:
+        details.append(f"missing fields: {', '.join(quality.missing_fields)}")
+    if quality.consistency_issues:
+        details.append(f"issues: {'; '.join(quality.consistency_issues)}")
+    return ". ".join(details) + "."
+
+
+def render_data_quality_panel(quality) -> None:
+    st.write("Data quality output")
+    rows = [
+        {"check": "Completeness score", "result": f"{quality.completeness_score:.1f}%"},
+        {"check": "Freshness score", "result": f"{quality.freshness_score:.1f}%"},
+        {"check": "Stale days", "result": str(quality.stale_days)},
+        {
+            "check": "Missing fields",
+            "result": ", ".join(quality.missing_fields) if quality.missing_fields else "None",
+        },
+        {
+            "check": "Consistency issues",
+            "result": "; ".join(quality.consistency_issues) if quality.consistency_issues else "None",
+        },
+        {"check": "Usable for recommendation", "result": "Yes" if quality.usable else "No"},
+    ]
+    st.dataframe(pd.DataFrame(rows), hide_index=True)
+    if quality.missing_fields or quality.consistency_issues or not quality.usable:
+        missing = ", ".join(quality.missing_fields) if quality.missing_fields else "fresh treasury source data"
+        st.warning(
+            md_safe(
+                "Request data before action: refresh the treasury dataset and provide "
+                f"{missing}. No recommendation should proceed until the quality gate passes."
+            )
+        )
+
+
 def record_once(result: dict) -> None:
     key = f"logged_{result['scenario']}_{result['run_id']}"
     if not st.session_state.get(key):
@@ -363,13 +403,14 @@ with workflow_tab:
     st.subheader("Guardrail Status")
     guardrail_rows = [
         {"guardrail": "Scope", "status": "PASS", "evidence": scope_result.reason},
-        {"guardrail": "Data Quality", "status": "PASS" if quality.usable else "ATTENTION", "evidence": f"Completeness {quality.completeness_score:.1f}%, freshness {quality.freshness_score:.1f}%."},
+        {"guardrail": "Data Quality", "status": "PASS" if quality.usable else "ATTENTION", "evidence": data_quality_evidence(quality)},
         {"guardrail": "Grounding", "status": "PASS" if grounding.passed else "BLOCK", "evidence": grounding.message},
         {"guardrail": "Treasury Policy", "status": "PASS" if policy.passed else "BLOCK", "evidence": f"{sum(1 for check in policy.checks if check.passed)}/{len(policy.checks)} checks passed."},
         {"guardrail": "Decision Confidence", "status": confidence.status, "evidence": confidence.message},
         {"guardrail": "Human-in-the-Loop", "status": "REQUIRED" if recommendation.requires_human_approval else "NOT REQUIRED", "evidence": f"Approval authority: {policy.required_approval}."},
     ]
     st.dataframe(pd.DataFrame(guardrail_rows), hide_index=True)
+    render_data_quality_panel(quality)
 
 with walkthrough_tab:
     st.subheader("Architecture Overview")
@@ -412,6 +453,7 @@ with dashboard_tab:
     )
     if confidence.status in {"BLOCK", "REQUEST DATA", "WITHHOLD"}:
         st.warning(md_safe(alert))
+        render_data_quality_panel(quality)
     elif confidence.status == "RECOMMEND WITH WARNING":
         st.warning(md_safe(alert))
     else:
